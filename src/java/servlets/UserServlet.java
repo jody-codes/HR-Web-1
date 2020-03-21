@@ -271,7 +271,7 @@ public class UserServlet extends HttpServlet {
             RequestDispatcher rd = request.getRequestDispatcher("/registerview.jsp");
             rd.include(request, response);
         } else {
-            String htmlFile = "D:\\METRODATA\\Tugas\\HR-Web\\web\\templateRegister.html";
+            String htmlFile = "C:\\Users\\amry4\\OneDrive\\Dokumen\\NetBeansProjects\\HR-Web\\web\\templateRegister.html";
             String message = "click to confirm account : " + "http://localhost:8084/HR-Web/confirmview.jsp?username=" + username;
             send("bootcamp34mii@gmail.com", "Bootcamp34", username, "reset password", message, htmlFile);
             response.sendRedirect("registerview.jsp");
